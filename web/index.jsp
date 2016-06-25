@@ -1,3 +1,10 @@
+<%-- 
+    Document   : index
+    Created on : Jun 24, 2016, 5:15:00 PM
+    Author     : Elliot Martinez
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -8,6 +15,7 @@
     </head>
     <body>
         <div><h1>Product Maintenance</h1></div>
-        <div><a href="/Products">View Products</a></div>
+        <div><a href="productMaint?action=displayProducts">View Products</a></div>
     </body>
 </html>
+

@@ -42,3 +42,18 @@ br {
 .margin_left {
     margin-left: 0.5em;
 }
+
+/* The styles for the tables */
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 50em;
+}
+th, td {
+    border: 1px solid black;
+    text-align: left;
+    padding: .5em;
+}
+.right {
+    text-align: right;
+}
