@@ -34,6 +34,13 @@ public class DisplayProductServlet extends HttpServlet{
             url = "/products.jsp";
         }
         
+        // Handles addProduct action
+        else if (action.equalsIgnoreCase("addProduct")) {
+            
+            
+            url = "/addProduct.jsp";
+        }
+        
         // forward to the view
         getServletContext().getRequestDispatcher(url)
                 .forward(request, response);

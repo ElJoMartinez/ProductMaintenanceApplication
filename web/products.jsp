@@ -31,8 +31,11 @@
                 <td><a href="productMaint?action=editProduct">Edit</a></td>
                 <td><a href="productMaint?action=deleteProduct">Delete</a></td>
             </tr>
-            
             </c:forEach>
         </table>
+        <form action="" method="post">
+                <input type="hidden" name="action" value="addProduct">
+                <input type="submit" value="Add Product">
+        </form>
     </body>
 </html>
