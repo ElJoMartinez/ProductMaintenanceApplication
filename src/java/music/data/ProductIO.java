@@ -70,7 +70,7 @@ public class ProductIO {
             PrintWriter out = new PrintWriter(new FileWriter(file));
             for (Product p : products) {
                 out.println(p.getCode() + "|"
-                + p.getDescription()
+                + p.getDescription() + "|"
                 + p.getPrice());
             }
             out.close();
