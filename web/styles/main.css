@@ -9,17 +9,24 @@ body {
     font-size: 85%;
     margin-left: 2em;
     margin-right: 2em;
-    width: 400px;
+    width: 500px;
 }
 h1 {     
     font-size: 140%;
-    color: teal;
+    color: darkblue;
     margin-bottom: .5em;    
 }
 h2 {     
     font-size: 120%;
-    color: teal;
+    color: darkblue;
     margin-bottom: .5em;    
+}
+h3 {
+    display: inline-block;
+    margin-bottom: 0em;
+    margin-top: 0em;
+    width: 8em;
+     
 }
 label {
     float: left;
@@ -29,7 +36,8 @@ label {
 }
 span {
     margin-left: 0.5em;    
-    margin-bottom: 0.5em;    
+    margin-bottom: 0.5em; 
+    display: inline-block;
 }
 br {
     clear: both;
@@ -56,4 +64,26 @@ th, td {
 }
 .right {
     text-align: right;
+}
+input {
+    float: left;
+}
+label {
+    float: left;
+}
+.item {
+    display: inline-block;
+  
+}
+.vspacer {
+    padding-top: 1em;
+}
+.hspace {
+    padding-left: 8em;
+}
+input[type=submit] {
+    font-size: medium;
+}
+i {
+    color: crimson;
 }

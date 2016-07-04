@@ -25,14 +25,18 @@
             </tr>
             <c:forEach var="product" items="${requestScope.products}">
             <tr>
-                <td>${product.code}</td>
-                <td>${product.description}</td>
-                <td class="right">${product.price}</td>
-                <td><a href="productMaint?action=editProduct">Edit</a></td>
-                <td><a href="productMaint?action=deleteProduct">Delete</a></td>
+                <td><c:out value="${product.code}" /></td>
+                <td><c:out value="${product.description}" /></td>
+                <td class="right">$<c:out value="${product.price}" /></td>
+                <td><a href="productMaint?action=editProduct&amp;productCode=${product.code}&amp;productDescription=${product.description}&amp;productPrice=${product.price}">Edit</a></td>
+                <td><a href="productMaint?action=deleteProduct&amp;productCode=${product.code}&amp;productDescription=${product.description}&amp;productPrice=${product.price}">Delete</a></td>
             </tr>
-            
             </c:forEach>
         </table>
+            <div class="vspacer"></div>
+        <form action="productMaint" method="post">
+            <input type="hidden" name="action" value="addProduct">
+            <input type="submit" value="Add Product">
+        </form>
     </body>
 </html>
