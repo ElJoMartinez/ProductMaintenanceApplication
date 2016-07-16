@@ -3,15 +3,32 @@ package music.business;
 /**
  *
  * @author Elliot Martinez
+ * @author Matthew Kastro
+ * 
+ * changelog: 7/13/16
+ *      Added JPA entity information
  */
 
 import java.io.Serializable;
 import java.text.NumberFormat;
+import javax.persistence.*;
+import java.util.Date;
 
+@Entity
 public class Product implements Serializable {
+    
+    @Id // primary key
+    @Column(name = "PRODUCTID", nullable = false)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long productId;
+    
+    @Column(name = "CODE", nullable = false)
     private String code;
+    
+    @Column(name = "DESCRIPTION", nullable = false)
     private String description;
+    
+    @Column(name = "PRICE", nullable = false)
     private double price;
     
     public Long getId() {
